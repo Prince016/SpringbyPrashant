@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 
+<!--  1. bytype -->
+ 
+ 
+  <bean id="depnameob" class="byType.Department">
+   	<property name="dname" value="cse"/>
+  	<property name="location" value="Gurugram"/>
+  	
+    
+   </bean>
+    
+    <bean id="addob" class="byType.Address" >
+    
+    <property name="state" value="Haryana"/>
+     <property name="city" value="Gurgaon"/>
+      <property name="house_no" value="234/E"/>
+    	
+   </bean>
+   
+ 
+     <bean id="empobj3" class="byType.Employee" autowire="byType" >
+   
+     
+     </bean>
+    
+   
+   
+   
+   
+   
+   
+   
+   
+  <!--  2. by name -->
+  <!--  
+  <bean id="depname" class="byName.Department">
+   	<property name="dname" value="cse"/>
+  	<property name="location" value="Gurugram"/>
+  	
+    
+   </bean>
+    
+    <bean id="add" class="byName.Address" >
+    
+    <property name="state" value="Haryana"/>
+     <property name="city" value="Gurgaon"/>
+      <property name="house_no" value="234/E"/>
+    	
+   </bean>
+   
+ 
+     <bean id="empobj2" class="byName.Employee" autowire="byName" >
+   
+     
+     </bean>
+   
+   -->
+   
+   
+   
+   
+  <!--  3. by consturctor -->
+  <!--  
+  <bean id="depname" class="byconstructor.Department">
+   	<property name="dname" value="cse"/>
+  	<property name="location" value="Gurugram"/>
+    
+   </bean>
+    
+    <bean id="add" class="byconstructor.Address" >
+    
+    <property name="state" value="Haryana"/>
+     <property name="city" value="Gurgaon"/>
+      <property name="house_no" value="234/E"/>
+    	
+   </bean>
+   
+ 
+     <bean id="empobj" class="byconstructor.Employee" autowire="constructor" >
+   
+     <constructor-arg name="empname" value="Prashant" />
+     </bean>
+    -->
+  
+   
+  
+  
+   
+   
+   
+   
+   
+   
+  
+   
+   
+   
+   
+   
+   
+   </beans>
