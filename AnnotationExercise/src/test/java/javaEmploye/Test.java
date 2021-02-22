@@ -9,8 +9,11 @@ public class Test {
 	public static void main(String[] args) {
 		ApplicationContext context = new AnnotationConfigApplicationContext(ConfigApp.class);
 		
-     		Employee employee = context.getBean("",Employee.class);
+     		Employee employee = context.getBean("empobj",Employee.class);
+     		employee.setName("prashant");
+     		System.out.println(employee.getName());
 	}
 	
 	
 }
+
