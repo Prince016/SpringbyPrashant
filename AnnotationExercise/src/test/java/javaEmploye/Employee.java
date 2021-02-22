@@ -1,15 +1,19 @@
 package javaEmploye;
 
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
+
 @Component
+//@ComponentScan("javaEmploye")
 public class Employee {
 
 	private Address add;
+	
     private String name;
     
     public Employee(Address add) {
-		// TODO Auto-generated constructor stub
+	
 	 this.add=add;
 	 System.out.println(" constructor of employee");
     }
@@ -40,3 +44,4 @@ public class Employee {
 	
 	
 }
+
