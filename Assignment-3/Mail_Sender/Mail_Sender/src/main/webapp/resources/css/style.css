@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* text-align: center; */
+	color: blue;
+	background-color: lightblue;
+}
+
+h1{
+	color: purple;
+}
+
+.error {
+	color: red;
+	background-color: yellow;
+}
+
+.align1{
+	padding: 79px;
+    margin: 33px;
+    justify-content: center;
+    align-items: center;
+
+    width: 28%;
+    margin-right: auto;
+    margin-left: auto;
+}
